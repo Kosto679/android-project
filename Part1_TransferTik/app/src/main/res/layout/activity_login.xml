@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slogan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:transitionName="logo_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/logo_round"
+        android:contentDescription="@string/todo"
+        />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alef"
+        android:text="@string/travel"
+        android:textSize="39sp" />
+
+    <TextView
+        android:id="@id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alef"
+        android:text="@string/hi"
+        android:textSize="20sp" />
+
+   <!--Εισαγωγη username &password-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"/>
+
+    <!--Εισαγωγη username-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="Username"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <!--Εισαγωγη password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_toggle"
+        android:hint="Κωδικός πρόσβασης"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/forgot_password"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="#0000000"
+        android:elevation="5dp"
+        android:fontFamily="@font/alef_bold"
+        android:text="Ξεχασα τον κωδικο μου!"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/eisodos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Εισοδος"
+        android:fontFamily="@font/alef_bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="184dp"
+        android:layout_height="72dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="#0000000"
+        android:elevation="5dp"
+        android:fontFamily="@font/actor"
+        android:text="New User?"
+        android:textColor="@color/black" />
+</LinearLayout>
+
+
+
+
